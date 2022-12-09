@@ -11,4 +11,7 @@ export class ApiService {
   addUser=(value:any)=>{
     return this.http.post("http://localhost:8080/add",value)    
   }
+  getPassword=(value:any)=>{
+    return this.http.post("http://localhost:8080/password",value)
+  }
 }
