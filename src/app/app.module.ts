@@ -7,7 +7,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule}from '@angular/common/http';
-import { UserSignupComponent } from './user-signup/user-signup.component'
+import { UserSignupComponent } from './user-signup/user-signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
 
 const myRouter:Routes=[
   {
@@ -24,6 +25,7 @@ const myRouter:Routes=[
     AppComponent,
     AdminLoginComponent,
     UserSignupComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
