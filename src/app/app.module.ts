@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule}from '@angular/common/http';
 import { UserSignupComponent } from './user-signup/user-signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { UserLoginComponent } from './user-login/user-login.component'
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserProfileComponent } from './user-profile/user-profile.component'
 
 const myRouter:Routes=[
   {
@@ -24,6 +25,9 @@ const myRouter:Routes=[
   },{
     path:"user",
     component:UserLoginComponent
+  },{
+    path: "profile",
+    component:UserProfileComponent
   }
 ]
 
@@ -34,6 +38,7 @@ const myRouter:Routes=[
     UserSignupComponent,
     DashboardComponent,
     UserLoginComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
