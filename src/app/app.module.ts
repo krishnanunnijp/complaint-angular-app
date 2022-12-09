@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule}from '@angular/common/http'
+import {HttpClientModule}from '@angular/common/http';
+import { UserSignupComponent } from './user-signup/user-signup.component'
 
 const myRouter:Routes=[
   {
     path:"",
     component:AdminLoginComponent
+  },{
+    path:"signup",
+    component:UserSignupComponent
   }
 ]
 
@@ -19,6 +23,7 @@ const myRouter:Routes=[
   declarations: [
     AppComponent,
     AdminLoginComponent,
+    UserSignupComponent,
   ],
   imports: [
     BrowserModule,
