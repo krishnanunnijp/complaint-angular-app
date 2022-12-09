@@ -8,7 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule}from '@angular/common/http';
 import { UserSignupComponent } from './user-signup/user-signup.component';
-import { DashboardComponent } from './dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserLoginComponent } from './user-login/user-login.component'
 
 const myRouter:Routes=[
   {
@@ -17,6 +18,12 @@ const myRouter:Routes=[
   },{
     path:"signup",
     component:UserSignupComponent
+  },{
+    path:"dash",
+    component:DashboardComponent
+  },{
+    path:"user",
+    component:UserLoginComponent
   }
 ]
 
@@ -26,6 +33,7 @@ const myRouter:Routes=[
     AdminLoginComponent,
     UserSignupComponent,
     DashboardComponent,
+    UserLoginComponent,
   ],
   imports: [
     BrowserModule,
