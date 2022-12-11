@@ -1,0 +1,21 @@
+<app-agmin-navbar></app-agmin-navbar>
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="row g-3 mt-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data" >
+                        <div class="card" style="width: 18rem;" >
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.complaints}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{i.name}}</h6>
+                            <p class="card-text">{{i.address}}</p>
+                            <p class="card-text">{{i.phoneno}}</p>
+                            <p class="card-text"><a href="#" class="card-link">{{i.email}}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
