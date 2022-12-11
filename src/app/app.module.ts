@@ -13,7 +13,8 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { AgminNavbarComponent } from './agmin-navbar/agmin-navbar.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
-import { AddComplaintsComponent } from './add-complaints/add-complaints.component'
+import { AddComplaintsComponent } from './add-complaints/add-complaints.component';
+import { ViewComplaintsComponent } from './view-complaints/view-complaints.component'
 
 const myRouter:Routes=[
   {
@@ -34,6 +35,9 @@ const myRouter:Routes=[
   },{
     path: "addComplaints",
     component:AddComplaintsComponent
+  },{
+    path: "viewComplaints",
+    component:ViewComplaintsComponent
   }
 ]
 
@@ -48,6 +52,7 @@ const myRouter:Routes=[
     AgminNavbarComponent,
     UserNavbarComponent,
     AddComplaintsComponent,
+    ViewComplaintsComponent,
   ],
   imports: [
     BrowserModule,
